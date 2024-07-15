@@ -40,7 +40,8 @@ footer {
 }
 
 .footer-menu {
-  list-style-type: none;
+  display: flex;
+  flex-direction: column;
 
   .menu-item {
     position: relative;
@@ -75,6 +76,7 @@ footer {
 .contacts-menu .menu-item {
   padding: 10px 0;
   cursor: default;
+  display: flex;
 
   img {
     margin-right: 20px;

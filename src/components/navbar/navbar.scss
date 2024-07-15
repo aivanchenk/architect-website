@@ -30,14 +30,13 @@ nav {
   gap: 30px;
 
   text-transform: uppercase;
-  list-style-type: none;
 
   .menu-item {
     position: relative;
     padding: 5px 0;
   }
 
-  .menu-item a {
+  a.menu-item {
     text-decoration: none;
     color: var(--base-font-color);
     font-size: 18px;

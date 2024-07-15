@@ -15,23 +15,23 @@ function Navbar() {
         </div>
       </Link>
 
-      <ul className="menu-bar">
-        <li className="menu-item">
-          <Link to="/">Main</Link>
-        </li>
-        <li className="menu-item">
-          <Link to="/gallery">Gallery</Link>
-        </li>
-        <li className="menu-item">
-          <Link to="/projects">Projects</Link>
-        </li>
-        <li className="menu-item">
-          <Link to="/certificates">Certificates</Link>
-        </li>
-        <li className="menu-item">
-          <Link to="/contacts">Contacts</Link>
-        </li>
-      </ul>
+      <div className="menu-bar">
+        <Link to="/" className="menu-item">
+          Main
+        </Link>
+        <Link to="/gallery" className="menu-item">
+          Gallery
+        </Link>
+        <Link to="/projects" className="menu-item">
+          Projects
+        </Link>
+        <Link to="/certificates" className="menu-item">
+          Certificates
+        </Link>
+        <Link to="/contacts" className="menu-item">
+          Contacts
+        </Link>
+      </div>
     </nav>
   );
 }
