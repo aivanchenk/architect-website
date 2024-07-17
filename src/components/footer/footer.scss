@@ -1,0 +1,104 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  background: var(--bg-black);
+  color: var(--font-color-white);
+
+  .logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 145px;
+    height: auto;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .logo-wrapper:hover {
+    transform: scale(1.1);
+  }
+}
+
+.footer-section:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  border-bottom: 1px solid var(--bg-grey-830);
+  padding: 35px 30px 30px 30px;
+
+  .header {
+    font-family: "TT Hoves Bold", Arial, sans-serif;
+    margin-bottom: 15px;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--font-color-white);
+  }
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+
+  .menu-item {
+    position: relative;
+    padding: 5px 0;
+    margin: 5px 0;
+  }
+
+  .menu-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+
+  .menu-item::after {
+    bottom: 0;
+  }
+
+  .menu-item::after {
+    left: 0;
+  }
+
+  .menu-item:hover::before,
+  .menu-item:hover::after {
+    width: 100%;
+    background-color: #fff;
+  }
+}
+
+.contacts-menu .menu-item {
+  padding: 10px 0;
+  cursor: default;
+  display: flex;
+
+  img {
+    margin-right: 20px;
+  }
+}
+
+.social-media-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  img {
+    height: 20px;
+    width: auto;
+    cursor: pointer;
+  }
+}
+
+.footer-section:last-child {
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+  color: var(--font-color-grey-880);
+}

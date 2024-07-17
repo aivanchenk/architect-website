@@ -1,0 +1,31 @@
+/* _defaults.scss */
+
+@import "../styles/typograhy";
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html,
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body > * {
+  display: block;
+  font-family: "TT Hoves", Arial, sans-serif;
+}
+
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
